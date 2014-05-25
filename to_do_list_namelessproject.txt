@@ -12,26 +12,27 @@ lista generica:
   3- studiare per bene python.
   4- creare la documentazione per il progetto hostato su github
   
-  5- gestire la lista dei tweet restituiti da search.
-  6- studiare il modulo per gestire i file di configurazione.
+  5- ottenere i permessi in scrittura per la nostra app (serve un numero di telefono).
+  6- mandare il primo tweet.
+  7- gestire la lista dei tweet restituiti da search.
+  8- rispondere ai tweet.
+    a- aggiungere dei contatori (e.g. uptime, numero di tweet, ora).
+    b- frasi e citazioni più o meno idiote.
+  9- studiare il modulo per gestire i file di configurazione.
     a- scrivere un file di configurazione.
     b- documentarsi per capire qual è il posto migliore per salvare questo tipo file.
     c- gestire il caso in cui non trova un file di config  #dovrebbe notificare la mancanza 
       	del file e crearne uno nuovo con i campi (possibilmente commentati) già ordinati da compilare.
-    
-  7- rispondere ai tweet.
-    a- aggiungere dei contatori (e.g. uptime, numero di tweet, ora).
-    b- frasi e citazioni più o meno idiote.
-  8- tweet di avvio.
-  9- creare un main loop che tenga attivo il programma.
+#ver 0.1
+
+  - tweet di avvio.
+  - creare un main loop che tenga attivo il programma.
+#ver 0.2
  
- #io sposterei il punto 4 dopo il punto 5.
-  
-  #elementi da ordinare ed aggiungere alla lista sopra:
+#elementi da ordinare ed aggiungere alla lista sopra:
    {
     - gestire e decidere come e dove salvare le chiavi di autenticazione.
     
-    - ottenere i permessi in scrittura per la nostra app (serve un numero di telefono).
     
     - studiare il modulo per gestire i file di configurazione.
        - scrivere un file di configurazione
