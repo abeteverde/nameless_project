@@ -1,0 +1,83 @@
+#this is a to do list for NAMELESSPROJECT project (referred name will also be BRACCIADICERA, this names will probably be changed).
+
+#italian:
+
+lista generica:
+ {
+  # valutare l'ordine delle voci qui di seguito:
+  
+  1- scegliere un nome per il progetto. --> fissare un momento per un brainstorming. --> caricare il nuovo progetto su github.
+    a- scegliere dei nomi per le varie release.
+  2- dividerci i vari compiti.
+  3- studiare per bene python.
+  4- creare la documentazione per il progetto hostato su github
+  
+  5- gestire la lista dei tweet restituiti da search.
+  6- studiare il modulo per gestire i file di configurazione.
+    a- scrivere un file di configurazione.
+    b- documentarsi per capire qual è il posto migliore per salvare questo tipo file.
+    c- gestire il caso in cui non trova un file di config  #dovrebbe notificare la mancanza 
+      	del file e crearne uno nuovo con i campi (possibilmente commentati) già ordinati da compilare.
+    
+  7- rispondere ai tweet.
+    a- aggiungere dei contatori (e.g. uptime, numero di tweet, ora).
+    b- frasi e citazioni più o meno idiote.
+  8- tweet di avvio.
+  9- creare un main loop che tenga attivo il programma.
+ 
+ #io sposterei il punto 4 dopo il punto 5.
+  
+  #elementi da ordinare ed aggiungere alla lista sopra:
+   {
+    - gestire e decidere come e dove salvare le chiavi di autenticazione.
+    
+    - ottenere i permessi in scrittura per la nostra app (serve un numero di telefono).
+    
+    - studiare il modulo per gestire i file di configurazione.
+       - scrivere un file di configurazione
+       - gestire il caso in cui non trova un file di config #dovrebbe notificare la mancanza del file e crearne uno nuovo con i campi (possibilmente commentati) già ordinati da compilare.
+    
+    - separare le funzioni di controllo della timeline da quelle di risposta (fork e processing in parallelo), cosicchè non ci siano ritardi nella ripetizione del ciclo main (il ritardo è proporzionale al numero di tweet ai quali il bot dovrà rispondere). #inoltre il main loop risulterebbe più ordinato e chiaro da leggere.
+      
+    - amministrare/gestire/ducumentare il progetto su github  #questa cosa la dovranno fare un po' tutti, dato che github deve essere uno strumento che ci semplifichi la vita.
+    
+    - gestione crash
+       - script che controlla se il programma è in esecuzione (cron) --> documentarsi.
+       - all'accensione twitta che è attivo e legge se nel file di log è riportato un crash ed eventualmente twitta anche quello.
+       - salvare le variabili (autenticazione, contatori vari (n tweet, crash, uptime, ultimi id dei tweet letti e dei messaggi diretti) in un file per evitare di perderle in caso di crash.
+      
+    - vari tweet stupidi (avvio, crash, ecc ecc)
+    
+    - avvisi prima di superare i limiti imposti da twitter #nel nostro caso non sarà facile arrivare a quelle cifre, ma non si sa mai...
+    
+        
+   }
+ }
+
+feature da aggiungere e idee più o meno fattibili (sintesi):  #aggiungete qui tutto quello che vi viene in mente
+ {
+  1-
+  2-
+  3-
+  
+  #elementi da ordinare ed aggiungere alla lista sopra:
+   {
+    controllo del bot tramite tweet specifici (e.g. "come stanno i tuoi contatori?"-->"bene, numero tweet:xx, uptime:xx...").
+      - lista di utenti (@) che possono comandare il bot via twitter.
+      - tweet che spegne/sospende il bot. (e.g. "risposte=0"-->"smetto di rispondere ai vostri tweet, in attesa di ordini").
+    gestione crash.
+    contatori vari (n tweet, crash, uptime, ultimi id dei tweet letti e dei messaggi diretti).
+    collegare il bot ad arduino e farli comunicare (utile dal punto di vista didattico perchè probabilmente arduino sarà programmato in c e il nostro bot in python.).
+     
+   }
+ }
+
+
+
+the project is hosted on github (link)
+
+developers:
+
+franzbertani
+cerix
+abeteverde
