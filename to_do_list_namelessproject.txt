@@ -2,6 +2,11 @@
 
 #italian:
 
+0.0 --> 1.0 sviluppo su twitter.
+1.0 --> 2.0 sviluppo su telegram.
+2.0 --> 3.0 ??
+
+
 lista generica:
  {
   # valutare l'ordine delle voci qui di seguito:
@@ -18,29 +23,36 @@ lista generica:
   8- rispondere ai tweet.
     a- aggiungere dei contatori (e.g. uptime, numero di tweet, ora).
     b- frasi e citazioni più o meno idiote.
-  9- studiare il modulo per gestire i file di configurazione.
+  9- separare le funzioni di controllo della timeline da quelle di risposta (fork e processing in parallelo), cosicchè non ci siano ritardi nella ripetizione del ciclo main (il ritardo è proporzionale al numero di tweet ai quali il bot dovrà rispondere). #inoltre il main loop risulterebbe più ordinato e chiaro da leggere.  
+ 10- studiare il modulo per gestire i file di configurazione.
     a- scrivere un file di configurazione.
     b- documentarsi per capire qual è il posto migliore per salvare questo tipo file.
     c- gestire il caso in cui non trova un file di config  #dovrebbe notificare la mancanza 
       	del file e crearne uno nuovo con i campi (possibilmente commentati) già ordinati da compilare.
+
 #ver 0.1
 
-  - tweet di avvio.
-  - creare un main loop che tenga attivo il programma.
+  11- tweet di avvio.
+  12- creare un main loop che tenga attivo il programma.
+
 #ver 0.2
- 
+
+  13- controllo del bot tramite tweet specifici (e.g. "come stanno i tuoi contatori?"-->"bene, numero tweet:xx, uptime:xx...").
+      - lista di utenti (@) che possono comandare il bot via twitter.
+      - tweet che spegne/sospende il bot. (e.g. "risposte=0"-->"smetto di rispondere ai vostri tweet, in attesa di ordini").
+    
+#ver 0.3
+
+  - 
+  
+  
+  - 
+  
+#ver 1.0 --> arriva telegram.
+
 #elementi da ordinare ed aggiungere alla lista sopra:
    {
     - gestire e decidere come e dove salvare le chiavi di autenticazione.
-    
-    
-    - studiare il modulo per gestire i file di configurazione.
-       - scrivere un file di configurazione
-       - gestire il caso in cui non trova un file di config #dovrebbe notificare la mancanza del file e crearne uno nuovo con i campi (possibilmente commentati) già ordinati da compilare.
-    
-    - separare le funzioni di controllo della timeline da quelle di risposta (fork e processing in parallelo), cosicchè non ci siano ritardi nella ripetizione del ciclo main (il ritardo è proporzionale al numero di tweet ai quali il bot dovrà rispondere). #inoltre il main loop risulterebbe più ordinato e chiaro da leggere.
-      
-    - amministrare/gestire/ducumentare il progetto su github  #questa cosa la dovranno fare un po' tutti, dato che github deve essere uno strumento che ci semplifichi la vita.
     
     - gestione crash
        - script che controlla se il programma è in esecuzione (cron) --> documentarsi.
@@ -63,9 +75,7 @@ feature da aggiungere e idee più o meno fattibili (sintesi):  #aggiungete qui t
   
   #elementi da ordinare ed aggiungere alla lista sopra:
    {
-    controllo del bot tramite tweet specifici (e.g. "come stanno i tuoi contatori?"-->"bene, numero tweet:xx, uptime:xx...").
-      - lista di utenti (@) che possono comandare il bot via twitter.
-      - tweet che spegne/sospende il bot. (e.g. "risposte=0"-->"smetto di rispondere ai vostri tweet, in attesa di ordini").
+    
     gestione crash.
     contatori vari (n tweet, crash, uptime, ultimi id dei tweet letti e dei messaggi diretti).
     collegare il bot ad arduino e farli comunicare (utile dal punto di vista didattico perchè probabilmente arduino sarà programmato in c e il nostro bot in python.).
