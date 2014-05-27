@@ -16,15 +16,16 @@ lista generica:
   2- dividerci i vari compiti.
   3- studiare per bene python.
   4- creare la documentazione per il progetto hostato su github
+  5- gestione opzioni di avvio con argparser.
   
-  5- ottenere i permessi in scrittura per la nostra app (serve un numero di telefono).
-  6- mandare il primo tweet.
-  7- gestire la lista dei tweet restituiti da search.
-  8- rispondere ai tweet.
+  6- ottenere i permessi in scrittura per la nostra app (serve un numero di telefono).
+  7- mandare il primo tweet.
+  8- gestire la lista dei tweet restituiti da search.
+  9- rispondere ai tweet.
     a- aggiungere dei contatori (e.g. uptime, numero di tweet, ora).
     b- frasi e citazioni più o meno idiote.
-  9- separare le funzioni di controllo della timeline da quelle di risposta (fork e processing in parallelo), cosicchè non ci siano ritardi nella ripetizione del ciclo main (il ritardo è proporzionale al numero di tweet ai quali il bot dovrà rispondere). #inoltre il main loop risulterebbe più ordinato e chiaro da leggere.  
- 10- studiare il modulo per gestire i file di configurazione.
+ 10- separare le funzioni di controllo della timeline da quelle di risposta (fork e processing in parallelo), cosicchè non ci siano ritardi nella ripetizione del ciclo main (il ritardo è proporzionale al numero di tweet ai quali il bot dovrà rispondere). #inoltre il main loop risulterebbe più ordinato e chiaro da leggere.  
+ 11- studiare il modulo per gestire i file di configurazione.
     a- scrivere un file di configurazione.
     b- documentarsi per capire qual è il posto migliore per salvare questo tipo file.
     c- gestire il caso in cui non trova un file di config  #dovrebbe notificare la mancanza 
@@ -32,12 +33,12 @@ lista generica:
 
 #ver 0.1
 
-  11- tweet di avvio.
-  12- creare un main loop che tenga attivo il programma.
+  12- tweet di avvio.
+  13- creare un main loop che tenga attivo il programma.
 
 #ver 0.2
 
-  13- controllo del bot tramite tweet specifici (e.g. "come stanno i tuoi contatori?"-->"bene, numero tweet:xx, uptime:xx...").
+  14- controllo del bot tramite tweet specifici (e.g. "come stanno i tuoi contatori?"-->"bene, numero tweet:xx, uptime:xx...").
       - lista di utenti (@) che possono comandare il bot via twitter.
       - tweet che spegne/sospende il bot. (e.g. "risposte=0"-->"smetto di rispondere ai vostri tweet, in attesa di ordini").
     
@@ -53,6 +54,8 @@ lista generica:
 #elementi da ordinare ed aggiungere alla lista sopra:
    {
     - gestire e decidere come e dove salvare le chiavi di autenticazione.
+    
+    - aggiornare la sezione che chiede all'utente di autenticarsi e di copiare le due stringhe. leggere qui: http://thomassileo.com/blog/2013/01/25/using-twitter-rest-api-v1-dot-1-with-python/
     
     - gestione crash
        - script che controlla se il programma è in esecuzione (cron) --> documentarsi.
