@@ -18,6 +18,9 @@ lista generica:
   4- creare la documentazione per il progetto hostato su github
   5- gestione opzioni di avvio con argparser.
   
+  ottimizzare il main.
+  Spostare i token di autenticazione dell'app in un file di configurazione salvato in binario.
+  
   6- ottenere i permessi in scrittura per la nostra app (serve un numero di telefono).
   7- mandare il primo tweet.
   8- gestire la lista dei tweet restituiti da search.
